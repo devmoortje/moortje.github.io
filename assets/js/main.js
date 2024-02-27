@@ -400,49 +400,8 @@
 
 })(jQuery);
 
-// document.getElementById("fibSeqSubmit").onclick = function(){
-// 	// let x = document.forms["myForm"]["myInput"].value;
-// 	// if (x == "1") {
-// 	//   alert("Name must be filled out");
-// 	//   return false;
-// 	// }
-//     fibSeqN = document.getElementById("fibSeqN").value; // get value
-// 	var testList = [0,1];
-// 	var fibIndex = 0;
-// 	var fibNum = 0;
-// 	while (fibSeqN > 2){
-// 		fibNum = testList[fibIndex] + testList[fibIndex+1]; // new value
-// 		testList.push(fibNum);
-// 		fibIndex += 1;
-// 		fibSeqN -= 1;
-// 	}
-
-// document.getElementById("testFibSeqResult").textContent = testList.join("  ");
-// }
-
-
-
-// function validateForm() {
-// 	fibSeqN = document.getElementById("fibSeqN").value; // get value
-
-// 	if (2 < fibSeqN && fibSeqN < 101){
-// 		var testList = [0,1];
-// 		var fibIndex = 0;
-// 		var fibNum = 0;
-// 			while (fibSeqN > 2){
-// 				fibNum = testList[fibIndex] + testList[fibIndex+1]; // new value
-// 				testList.push(fibNum);
-// 				fibIndex += 1;
-// 				fibSeqN -= 1;
-// 			};
-// 		document.getElementById("testFibSeqResult").textContent = testList.join("  ");
-// 	};
-
-// }
-
 document.getElementById("fibSeqSubmit").onclick = function(){
 	fibSeqN = document.getElementById("fibSeqN").value; // get value
-	console.log(fibSeqN);
 
 	if(fibSeqN == ""){
 		document.getElementById("testFibSeqResult").textContent = "";
@@ -469,6 +428,6 @@ document.getElementById("fibSeqSubmit").onclick = function(){
 				fibIndex += 1;
 				fibSeqN -= 1;
 			};
-		document.getElementById("testFibSeqResult").textContent = testList.join("  ");
+		document.getElementById("testFibSeqResult").textContent = testList.join("   ");
 	};
 }
