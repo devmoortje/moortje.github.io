@@ -51,7 +51,7 @@
 									<div class="fields">
 										<div class="field">
 											<p id="fibSeqP">How many Fibonacci numbers would you like? 
-												<input id="fibSeqN" type="number" placeholder="1234" minlength="1" required max="100" min="3"></p>
+												<input id="fibSeqN" type="number" placeholder="1234" onkeydown= "if (event.keyCode == 13) document.getElementById('fibSeqSubmit').click()"></p>
 											<input id="fibSeqSubmit" type="button" value="submit"><br><br>
 											<p id="testFibSeqResult"></p>
 										</div>
